@@ -1,0 +1,34 @@
+{
+    "info": {
+        "name": "CRUD GeneratorV2",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "post generator",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "localhost:8000/generate-structure",
+                    "path": [
+                        "generate-structure"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"moduleType\": \"ms\",\n  \"schema\": \"sera\",\n  \"isMsOnly\": true,\n  \"entities\": [\n    {\n      \"table\": \"vig_contratos\",\n      \"entityFileName\": \"contracts-vig\"\n    }\n  ]\n}"
+                }
+            }
+        }
+    ]
+}
